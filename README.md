@@ -1,0 +1,5 @@
+# shells
+
+```
+zplug "isuke/shells"
+```
