@@ -40,3 +40,8 @@ setopt globdots              # 明確なドットの指定なしで.から始ま
 
 zstyle ':completion:*:default' menu select=2
 zstyle ':completion:*:*files' ignored-patterns '*?.o' '*?~' '*\#'
+
+#
+# Other
+#
+setopt nonomatch
