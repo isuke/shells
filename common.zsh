@@ -8,6 +8,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 #
 # history
 alias h='history'
+alias ha='history -E 1'
 
 # touch
 alias t='touch'
@@ -25,6 +26,17 @@ alias la='ls -lA'
 
 # sublime
 alias sublime_package="~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User"
+
+#
+# History
+#
+export HISTFILE=${HOME}/.zsh_history
+export HISTSIZE=10000
+export SAVEHIST=100000
+setopt hist_reduce_blanks
+setopt hist_ignore_dups
+setopt share_history
+autoload history-search-end
 
 #
 # 補完
