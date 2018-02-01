@@ -1,2 +1,2 @@
-export EDITOR='subl -n -w'
+export EDITOR='code'
 if which direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
