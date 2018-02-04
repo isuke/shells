@@ -30,9 +30,6 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-# sublime
-alias sublime_package="~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User"
-
 #
 # History
 #
