@@ -11,7 +11,7 @@ alias h='history'
 alias ha='history -E 1'
 
 # touch
-alias t='touch'
+alias tch='touch'
 
 # tar
 alias tzip='tar zcvf'
