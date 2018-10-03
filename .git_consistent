@@ -5,7 +5,7 @@ subject:
   rules:
       firstLatter: upper
       dotAtEnd: false
-      ascii: false
+      nonAscii: false
 body:
   type: text
   required: false
@@ -14,4 +14,4 @@ body:
   rules:
       firstLatter: upper
       dotAtEnd: true
-      ascii: false
+      nonAscii: false
