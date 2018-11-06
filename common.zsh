@@ -33,6 +33,9 @@ alias egrep='egrep --color=auto'
 # sed
 alias sed='gsed'
 
+# dd
+alias p='cd ~/Projects'
+
 #
 # History
 #
