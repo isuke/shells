@@ -21,9 +21,9 @@ alias tunzip='tar xvf'
 alias less='less -N -S -#4'
 
 # ls
-alias ls='ls -G'
-alias ll='ls -l'
-alias la='ls -lA'
+alias ls='gls -G'
+alias ll='gls -l --time-style="+%Y-%m-%d %H:%M:%S"'
+alias la='gls -lA --time-style="+%Y-%m-%d %H:%M:%S"'
 
 # grep
 alias grep='grep --color=auto'
