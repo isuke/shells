@@ -37,6 +37,9 @@ alias sed='gsed'
 alias p='cd ~/Projects'
 alias move='(){ mkdir -p $1; cd $1 }'
 
+# job
+alias port='(){ lsof -i:$1 }'
+
 #
 # History
 #
