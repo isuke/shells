@@ -33,8 +33,9 @@ alias egrep='egrep --color=auto'
 # sed
 alias sed='gsed'
 
-# dd
+# cd
 alias p='cd ~/Projects'
+alias move='(){ mkdir -p $1; cd $1 }'
 
 #
 # History
