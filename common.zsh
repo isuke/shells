@@ -57,6 +57,13 @@ setopt HIST_NO_STORE        # histroyコマンドは記録しない
 
 autoload history-search-end
 
+zshaddhistory() {
+  local line=${1%%$'\n'} # コマンドライン全体から改行を除去したもの
+  local cmd=${line%% *}  # １つ目のコマンド
+
+  [[ ${#line} -ge 3 ]]
+}
+
 #
 # 補完
 #
