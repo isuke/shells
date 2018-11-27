@@ -46,9 +46,15 @@ alias port='(){ lsof -i:$1 }'
 export HISTFILE=${HOME}/.zsh_history
 export HISTSIZE=10000
 export SAVEHIST=100000
-setopt hist_reduce_blanks
-setopt hist_ignore_dups
-setopt share_history
+setopt hist_ignore_dups     # 前と重複する行は記録しない
+setopt hist_reduce_blanks   # 余分なスペースを削除してヒストリに保存する
+setopt share_history        # 同時に起動したzshの間でヒストリを共有する
+
+setopt HIST_FIND_NO_DUPS    # 履歴検索中、(連続してなくとも)重複を飛ばす
+setopt HIST_IGNORE_ALL_DUPS # 履歴中の重複行をファイル記録前に無くす
+# setopt HIST_IGNORE_SPACE    # 行頭がスペースのコマンドは記録しない
+setopt HIST_NO_STORE        # histroyコマンドは記録しない
+
 autoload history-search-end
 
 #
