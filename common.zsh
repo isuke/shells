@@ -40,6 +40,9 @@ alias move='(){ mkdir -p $1; cd $1 }'
 # job
 alias port='(){ lsof -i:$1 }'
 
+# terminal-notifier
+alias noti='(){ terminal-notifier -message $1 }'
+
 #
 # History
 #
