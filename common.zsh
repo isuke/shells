@@ -21,9 +21,15 @@ alias tunzip='tar xvf'
 alias less='less -N -S -#4'
 
 # ls
-alias ls='gls -G'
-alias ll='gls -l --time-style="+%Y-%m-%d %H:%M:%S"'
-alias la='gls -lA --time-style="+%Y-%m-%d %H:%M:%S"'
+if which gls > /dev/null; then
+  alias ls='gls -G'
+  alias ll='gls -l --time-style="+%Y-%m-%d %H:%M:%S"'
+  alias la='gls -lA --time-style="+%Y-%m-%d %H:%M:%S"'
+else
+  alias ls='ls -G'
+  alias ll='ls -l --time-style="+%Y-%m-%d %H:%M:%S"'
+  alias la='ls -lA --time-style="+%Y-%m-%d %H:%M:%S"'
+fi
 
 # grep
 alias grep='grep --color=auto'
@@ -31,7 +37,9 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 # sed
-alias sed='gsed'
+if which gsed > /dev/null; then
+  alias sed='gsed'
+fi
 
 # cd
 alias p='cd ~/Projects'
