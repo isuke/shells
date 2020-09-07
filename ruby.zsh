@@ -5,4 +5,4 @@ alias be="bundle exec"
 alias bes="bundle exec spring"
 
 # Rails
-alias rails_new='bundle exec rails new . --skip-test-unit --fixtures=false --skip-bundle --no-ri --no-rdoc --skip-action-cable --skip-turbolinks --skip-sprockets'
+alias rails_new='bundle exec rails new . --skip-action-mailer --skip-action-mailbox --skip-action-text --skip-action-cable --skip-sprockets --skip-javascript --skip-turbolinks --skip-test --skip-system-test --skip-bundle --skip-webpack-install'
