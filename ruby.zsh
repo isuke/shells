@@ -1,5 +1,5 @@
 # Bundler
-alias bi='bundle install --without=production'
+alias bi='bundle install'
 alias bc="bundle clean"
 alias be="bundle exec"
 alias bes="bundle exec spring"
