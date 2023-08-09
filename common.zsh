@@ -21,7 +21,11 @@ alias tunzip='tar xvf'
 alias less='less -N -S -#4'
 
 # ls
-if which gls > /dev/null; then
+if which exa > /dev/null; then
+  alias ls='exa -1 -b --group-directories-first --time-style="long-iso"'
+  alias ll='exa -1 -b --group-directories-first --time-style="long-iso" -l'
+  alias la='exa -1 -b --group-directories-first --time-style="long-iso" -l -a'
+elif which gls > /dev/null; then
   alias ls='gls -G'
   alias ll='gls -l --time-style="+%Y-%m-%d %H:%M:%S"'
   alias la='gls -lA --time-style="+%Y-%m-%d %H:%M:%S"'
