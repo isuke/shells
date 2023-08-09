@@ -35,6 +35,12 @@ else
   alias la='ls -lA --time-style="+%Y-%m-%d %H:%M:%S"'
 fi
 
+# cat
+if which bat > /dev/null; then
+  alias cat='bat --paging="never" --theme="TwoDark" --style="header,grid"'
+  alias tailf='(){ tail -f $1 | bat --paging="never" --theme="TwoDark" --style="plain" --language="log" }'
+fi
+
 # grep
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
