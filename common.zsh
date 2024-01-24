@@ -55,6 +55,9 @@ fi
 alias p='cd ~/Projects'
 alias move='(){ mkdir -p $1; cd $1 }'
 
+# global ip
+alias gip='curl http://ipecho.net/plain; echo'
+
 # job
 alias port='(){ lsof -i:$1 }'
 
