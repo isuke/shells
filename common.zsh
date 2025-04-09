@@ -21,18 +21,18 @@ alias tunzip='tar xvf'
 alias less='less -N -S -#4'
 
 # ls
-if which exa > /dev/null; then
-  alias ls='exa -1 -b --group-directories-first --time-style="long-iso"'
-  alias ll='exa -1 -b --group-directories-first --time-style="long-iso" -l'
-  alias la='exa -1 -b --group-directories-first --time-style="long-iso" -l -a'
+if which eza > /dev/null; then
+  alias ls='eza -1 -b --group-directories-first --time-style="long-iso"'
+  alias ll='eza -1 -b --group-directories-first --time-style="long-iso" -l'
+  alias la='eza -1 -b --group-directories-first --time-style="long-iso" -l -a'
 elif which gls > /dev/null; then
   alias ls='gls -G'
   alias ll='gls -l --time-style="+%Y-%m-%d %H:%M:%S"'
   alias la='gls -lA --time-style="+%Y-%m-%d %H:%M:%S"'
 else
   alias ls='ls -G'
-  alias ll='ls -l --time-style="+%Y-%m-%d %H:%M:%S"'
-  alias la='ls -lA --time-style="+%Y-%m-%d %H:%M:%S"'
+  alias ll='ls -l'
+  alias la='ls -lA'
 fi
 
 # cat
