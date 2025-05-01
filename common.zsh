@@ -62,7 +62,7 @@ alias gip='curl http://ipecho.net/plain; echo'
 alias port='(){ lsof -i:$1 }'
 
 # terminal-notifier
-alias noti='(){ terminal-notifier -message $1 }'
+alias noti='(){ terminal-notifier -message $1 -sound default }'
 
 #
 # History
